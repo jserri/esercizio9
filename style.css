@@ -1,0 +1,141 @@
+:root{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: #dfdfdf;
+    border-radius: 25px;
+}
+
+.cardheader {
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #b2b2b2;
+    align-items: center;
+   
+    font-size: 12px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.headerleft {
+    display: flex;
+    flex-basis: 80%;
+
+}
+
+.position {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0.5rem;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+.datacolor {
+    color: aliceblue;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+}
+
+.imgcircle {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: block;
+}
+
+.headerright {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-basis: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.headerright > .points {
+    margin: 0 2px;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+}
+
+.mainimage > img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.interactions {
+    display: flex;
+    width: 20%;
+    margin-top: 1rem;
+}
+
+.interactions img {
+    width: 20px;
+    height: 20px;
+    margin-left: 1.2rem;
+}
+
+footer > article {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+footer > article > p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    text-align: start;
+    margin-left: 1rem;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 375px) {
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+}
